@@ -1,0 +1,16 @@
+aside{
+    /* position:absolute; */
+    float: left;
+    width: 150px;
+    margin-top: 20px;
+    /* background-color: aliceblue; */
+    display: inline-block;
+}
+
+section{
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    padding: 30px;
+    /* background-color: aqua; */
+}

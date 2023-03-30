@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>뽀듬</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../common/js/basic.js"></script>
+    <script src="./js/upload.js"></script>
+    <!-- <script src="../common/js/includeHTML.js"></script> -->
+    <link rel="stylesheet" href="../common/css/header.css">
+    <link rel="stylesheet" href="../course/css/write.css">
+</head>
+<body>
+    <header include-html="../common/header.html"></header><br>
+    <div class="form">
+        <form class="course">
+            교육 종류<br>
+            <select name="courseInfoId">
+                <option></option>
+            </select><br>
+            장소<br>
+            <input type="text" name="courseLocation"><br>
+            날짜<br>
+            <input type="datetime-local" name="courseDate"><br>
+            가격 <br>
+            <input type="number" name="coursePrice">만 원<br>
+            모집인원<br>
+            <input type="number" name="courseVacancy">명<br>
+            사진 <br>
+            <input type="file" name="f" multiple accept="image/jpg"><br>
+            <div class="show">
+            </div>
+            <input type="submit" value="전송"><br>
+        </form>
+    </div>
+</body>
+<!-- <script>
+    includeHTML();
+</script> -->
+</html>

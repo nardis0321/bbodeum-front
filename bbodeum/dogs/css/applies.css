@@ -1,0 +1,32 @@
+body{
+    color: #112D4E;
+}
+/* div.doglist{
+    display: flex;
+    flex-direction:column;
+} */
+div.applylist{
+    display: flex;
+    flex-direction:column;
+    margin: 20px;
+}
+div.apply{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    /* border: #112D4E 1px solid; */
+    /* border-radius: 5px; */
+    border-bottom: 1px solid;
+    color: #112D4E;
+    padding: 8px;
+}
+div.apply div{
+    margin: auto;
+    padding: 0px 10px;
+}
+
+div.apply[onclick]:hover{
+    /* background-color: #DBE2EF; */
+    background-color: #F9F7F7;
+    border-radius: 5px;
+}

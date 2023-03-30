@@ -1,0 +1,61 @@
+div.courseListBox{
+    max-width: 1200px;
+    margin: auto;
+}
+div.courselist{
+    display: flex;
+    display: inline-flex;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px;
+    /* border:1px solid lightgray; */
+    border-radius: 10px;
+    /* background-color: aliceblue; */
+    font-size: 24px;
+}
+
+div.program{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 10px;
+    width: 220px;
+    /* border:1px solid #D7C0AE; */
+    /* border-radius: 10px; */
+    background-color: #F9F7F7;
+    color: #112D4E;
+    font-size: 20px;
+
+    flex-direction: column;
+}
+
+img{
+    aspect-ratio: 20 / 13;
+    object-fit: cover;
+}
+
+div.courseDate, div.trName, div.progRecruit, div.coursePrice{
+    font-size: smaller;
+    padding: 2px;
+}
+
+div.progTitle{
+    margin-top: 6px;
+    padding: 10px;
+    font-weight: bold;
+}
+div.coursePrice{
+    padding: 15px;
+    margin-bottom: 5px;
+    color: #3F72AF;
+    font-weight: bold;
+}
+
+div.pagegroup{
+    text-align: center;
+    color: #112D4E;
+}
+div.pagegroup:hover{
+    cursor: pointer;
+}

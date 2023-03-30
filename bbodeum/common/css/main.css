@@ -1,0 +1,32 @@
+div.main{
+    text-align: center;
+}
+
+/*--- 지도 ---*/
+#map{
+    margin: 40px auto;
+    width:60%;
+    height:450px;
+}
+
+/*--- 채팅으로 문의 버튼 ---*/
+#chatbtn{
+    position: sticky;
+    float: right;
+    top: 80%;
+    background-color: #3F72AF;
+    color: #F9F7F7;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 20px;
+    margin: 8px;
+    cursor: pointer;
+}
+#chatbtn:hover{
+    background-color: #112D4E;
+    color: #F9F7F7;
+}
+
+body{
+    color: #112D4E;
+}

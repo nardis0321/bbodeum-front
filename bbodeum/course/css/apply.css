@@ -1,0 +1,100 @@
+div.doglist{
+    display: flex;
+    /* display: inline-flex; */
+    justify-content: center;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* margin: auto; */
+    margin: 5px;
+    /* width: 200px; */
+    /* border:1px solid lightgray; */
+    border-radius: 10px;
+    /* background-color: aliceblue; */
+    font-size: 24px;
+}
+
+div.dog{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    /* border:1px solid lightgray; */
+    border-radius: 10px;
+    background-color: #F9F7F7;
+    font-size: 24px;
+
+    flex-direction: column;
+}
+
+div.dog div{
+    font-size: 20px;
+    color: #112D4E;
+}
+
+div.doglist div.dog:hover{
+    cursor: pointer;
+    background-color: #3F72AF;
+    color: #F9F7F7;
+}
+
+span.doginfo div{
+    min-width: 500px;
+    min-height: 30px;
+    margin: auto;
+    /* background-color: #F9F7F7; */
+    color: #112D4E;
+}
+
+button{
+    /* position: relative; */
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    /* color: #F9F7F7; */
+    /* background-color: #DBE2EF; */
+    background-color: #F9F7F7;
+    color: #112D4E;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-right: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #3F72AF;
+    color: #F9F7F7;
+    /* color: #112D4E; */
+}
+
+div.dogaddbtn{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    /* background-color: #DBE2EF; */
+    /* color: #112D4E; */
+    background-color: #3F72AF;
+    color: #F9F7F7;
+    /* background-color: #F9F7F7; */
+    /* color: #112D4E; */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 20px;
+    margin-left: 100%;
+    min-width: 120px;
+    text-align: center;
+}
+
+div.dogaddbtn:hover{
+    cursor: pointer;
+    /* background-color: #3F72AF; */
+    /* color: #F9F7F7; */
+    /* background-color: #DBE2EF; */
+    background-color: #112D4E;
+    color: #F9F7F7;
+    /* color: #112D4E; */
+}

@@ -1,0 +1,108 @@
+/*  ----- 배치, 사이즈 결정 START  ---- */
+body{
+  font-family: 'Noto Sans KR','AppleSDGothicNeo-Regular',
+  'Malgun Gothic','맑은 고딕',
+  'dotum','돋움', sans-serif;
+}
+header {
+  height: 120px;
+}
+
+ul {
+  list-style: none;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul li {
+  font-family: 'Inter';
+  float: left;
+  text-align: center;
+
+  background-color: #3F72AF;
+  color: #F9F7F7;
+  padding: 4px 10px;
+  margin: 5px;
+  border-radius: 20px;
+}
+/*  ----- 배치, 사이즈 결정 END  ---- */
+
+/* a 초기화 */
+a{
+  text-decoration: none;
+}
+
+/*  ---  메인로고 START ---- */
+h1 a {
+  text-align: center;
+  margin: 10px;
+  padding: 40px;
+  font-size: 30px;
+  color: #3F72AF;
+}
+
+h1 a:link {
+  /* color: #b3cf99; */
+  text-decoration: none;
+}
+
+h1 a:visited {
+  color: #3F72AF;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  /* color: #112D4E; */
+  text-decoration: none;
+}
+
+h1 a:active {
+  color: #3F72AF;
+  text-decoration: none;
+}
+/*  ---  메인로고 END ---- */
+
+/*  -----   메뉴 START  -----  */
+ul.menu li{
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin: 5px 8px;
+}
+ul.menu li a {
+  color: #ffffff;
+}
+ul.menu li:hover {
+  background-color: #112D4E;
+}
+ul.menu li:active {
+  color: #112D4E;
+}
+/* li a {
+  text-align: center;
+}
+
+
+li a:visited {
+  background-color: #b3cf99;
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+li a:hover {
+  padding: 4px 10px;
+  border-radius: 20px;
+  background-color: #759752;
+  color: #ffffff;
+  
+  text-decoration: none;
+}
+
+li a:active {
+  color: #759752;
+  text-decoration: none;
+} */
+/*  -----   메뉴 END  -----  */

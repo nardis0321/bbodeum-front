@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>뽀듬</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../common/js/basic.js"></script>
+    <link rel="stylesheet" href="../common/css/basic.css">
+    <link rel="stylesheet" href="./css/signup.css">
+    <script src="./js/signup.js"></script>
+</head>
+<body>
+    <header></header><br>
+    <div class="background">
+        <div class="signupBox">
+            <h3>회원가입</h3>
+            <form name="signUpSheet" method="post">
+                <div class="memEmail">
+                    아이디<br>
+                    <input type="text" name="memEmail" placeholder="이메일을 입력해주세요">
+                    <input type="button" value="중복 확인" name="idCheckBtn">
+                    <div class="idcheck">아이디 중복 확인이 필요합니다</div>
+                </div>
+                <br>
+                <div class="memPwd">
+                    비밀번호<br>
+                    <input type="password" name="memPwd" placeholder="8자 이상 20자 이하로 입력해주세요">
+                </div>
+                <br>
+                <div class="memName">
+                    이름<br>
+                    <input type="text" name="memName" placeholder="이름을 입력해주세요">
+                </div>
+                <br>
+                <div class="memTel">
+                    연락처<br>
+                    <input type="text" name="memTel" placeholder="예) 010-123-1234">
+                </div>
+                <br>
+                <input type="button" value="가입 완료" name="signUpBtn">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

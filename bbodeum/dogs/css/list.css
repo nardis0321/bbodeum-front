@@ -1,0 +1,34 @@
+div.doglist{
+    display: flex;
+    display: inline-flex;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px;
+    /* width: 200px; */
+    /* border:1px solid lightgray; */
+    border-radius: 10px;
+    /* background-color: aliceblue; */
+    font-size: 24px;
+}
+
+div.dog{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 5px;
+    width: 200px;
+    border:1px solid lightgray;
+    border-radius: 10px;
+    /* background-color: aliceblue; */
+    font-size: 24px;
+
+    flex-direction: column;
+}
+
+span.doginfo div{
+    min-width: 300px;
+    min-height: 30px;
+    margin: auto;
+    /* background-color: #ddead1; */
+}
