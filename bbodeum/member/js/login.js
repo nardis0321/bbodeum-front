@@ -16,9 +16,6 @@ $(()=>{
     let $form = $('div.loginBox>form')
     $form.on('click', 'input[name=loginBtn]', ()=>{
         let memId = $('input[name=memId]').val()
-        // console.log(memEmail)
-        // console.log(memEmail.startsWith('TR'))
-        // console.log(memEmail.includes('@'))
         if(memId.startsWith('TR')){
             if(!memId.includes('@')){
                 //트레이너 로그인
@@ -41,29 +38,30 @@ $(()=>{
                         alert('오류' + xhr.responseText)
                     } 
                 })
+            }else {
+                $.ajax({
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    url: backURL + 'user/signin',
+                    method: 'post',
+                    data : JSON.stringify({
+                        "memEmail": $('input[name=memId]').val(),
+                        "memPwd": $('input[name=memPwd]').val()
+                    }),
+                    contentType: 'application/json',
+                    success: function(jsonObj){
+                        alert(jsonObj.memName+'님 환영합니다')
+                        localStorage.setItem('name', jsonObj.memName)
+                        localStorage.setItem('email', jsonObj.memEmail)
+                        location.href=frontURL+'common/main.html'
+                    },
+                    error: function(xhr){
+                        alert(xhr.responseText)
+                    } 
+                })
             }
         }
-        $.ajax({
-            xhrFields: {
-                withCredentials: true
-            },
-            url: backURL + 'user/signin',
-            method: 'post',
-            data : JSON.stringify({
-                "memEmail": $('input[name=memId]').val(),
-                "memPwd": $('input[name=memPwd]').val()
-            }),
-            contentType: 'application/json',
-            success: function(jsonObj){
-                    alert(jsonObj.memName+'님 환영합니다')
-                    localStorage.setItem('name', jsonObj.memName)
-                    localStorage.setItem('email', jsonObj.memEmail)
-                    location.href=frontURL+'common/main.html'
-            },
-            error: function(xhr){
-                alert(xhr.responseText)
-            } 
-        })
     })
     //-- 로그인 버튼 클릭 되었을때 할일 END--
 })
